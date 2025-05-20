@@ -1,0 +1,685 @@
+body {margin: 0;
+background-color: black;
+  font-family: "Gruppo", sans-serif;
+width: 100%;}
+
+
+*{font-family:"Gruppo", sans-serif; }
+
+
+
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+}
+
+section {font-size: 14pt;}
+
+nav {
+    font-family:"Gruppo", sans-serif; 
+    width: 80%;
+    margin: 0 auto;
+    padding: 2.5%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+        font-family:"Gruppo", sans-serif; 
+}
+
+nav ul li a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a .menu-text {
+    display: none;
+}
+
+nav ul li a:hover, #menu li a.active {}
+
+nav ul li a img.logo {
+    width: 50%;
+}
+
+nav ul li a img.icon {
+    width: 50px;
+}
+
+
+
+@media (min-width: 768px) {
+    nav ul li a {
+        flex-direction: row;
+    }
+
+    nav ul li a .menu-text {
+        display: inline;
+        font-size: 1em;
+        padding-left: 0.5em;
+    }
+
+    nav ul li a img.logo {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav ul li a img.icon {
+        display: none;
+    }
+    
+    section#menu ul {
+list-style: none;
+text-align:center;
+    margin: 0 auto;
+    background-size: 100%;
+    padding-top: 20%;
+    padding-bottom: 25%;
+    background-color: black;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+section#menu ul {margin-top: 3%;
+}
+
+section#menu ul li {display:inline;
+}
+
+section#menu ul li a {
+width: 33%;
+color: white;
+display:inline-block;
+font-weight: bold;
+text-decoration: none;}
+}
+
+
+
+
+
+
+
+
+section img {width: 30%;
+margin: 0 auto;
+filter: invert();}
+
+#home {text-align: center;
+padding: 15%;
+    margin-top: 3%;
+background-image: url(img/nuovosfondobig.jpg);
+background-size: 100%;}
+
+#home img {opacity: 0;}
+
+@media only screen and (max-width:1024px) {
+    
+    #home {background-image: url(img/responsiveipad.jpg);
+        background-repeat: no-repeat;
+       height:  100vh;   
+        padding: 0;
+        
+    }
+    
+       section img {display: none;} 
+    
+}
+
+@media only screen and (max-width:700px) {
+    
+    #home {background-image: url(img/sfondotel.png);
+        background-repeat: no-repeat;
+       height:  100vh;
+        
+    }
+    
+    section img {display: none;}
+    
+}
+
+
+
+
+
+.navbar {
+    padding: 10px;
+    background-color: fuchsia;
+    position: fixed;
+    z-index: 90;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.icon-bar {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: black;
+}
+
+
+section#menu ul {
+list-style: none;
+text-align:center;
+    margin: 0 auto;
+    background-size: 100%;
+    padding-top: 20%;
+    padding-bottom: 25%;
+    background-color: black;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 3%;
+}
+
+
+
+section#menu ul li a {
+width: 33%;
+color: white;
+display:inline-block;
+font-weight: bold;
+height: 40px;
+line-height: 50px;
+text-decoration: none;}
+
+
+
+/*ATLANTIC*/
+
+
+#logoatl {display: block;
+width: 50%;
+margin: 0 auto;
+margin-top: 120px;}
+
+#logoatl img {width: 100%;}
+
+#bioatl {
+    color: white;
+width: 70%;
+text-align: center;
+margin: 0 auto;
+margin-top: 5%;
+margin-bottom: 5%;
+font-size: 20px;
+line-height: 30px;}
+
+section {background-color: black;}
+
+#sfondosec {background-image: url(img/atl/sfondoatl.png);
+    padding: 50px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:1024px) {
+    
+    #bioatl { width: 90%;
+    text-align: left;
+    margin: 0 auto;}
+    
+    #logoatl {width: 90%;
+    margin-top: 80px;
+    margin-bottom: 80px;}
+    
+       #logoatl img {display: block;
+    margin: 0 auto;
+    width: 100%;} 
+    
+}
+
+@media only screen and (max-width:700px) {
+    
+    #home {background-image: url(img/sfondotel.png);
+        background-repeat: no-repeat;
+       height:  100vh;
+        
+    }
+    
+       #logoatl img {display: block;
+    margin: 0 auto;
+    width: 100%;} 
+    
+}
+
+
+/*TREVISI*/
+
+#sfondotrevisi {background-image: url(img/sfondotrev.png);
+background-repeat: no-repeat;
+width: 100vw;}
+
+#trevisibio {
+margin: 0 auto;
+text-align: center;
+padding: 100px;
+color: #349a8f;
+font-size: 20px;
+    line-height: 30px;
+width: 70%}
+
+#trevisilogos {display: flex;
+width: 60%;
+margin: 0 auto;
+filter: invert();
+padding-top: 150px;}
+
+#trevisishop {width: 100%;
+    margin: 0 auto;
+background-color: black;
+filter: invert();
+padding-bottom: 100px;}
+
+#imgfelpe {display: flex;}
+
+
+#trevisishop img {width: 30%;
+            padding-top: 50px;
+        padding-bottom: 50px;
+}
+
+#trevisibutton {width: 250px;
+    background-color: #349a8f;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    filter: invert();
+    text-decoration: none;
+    
+}
+
+#trevisibutton a {text-decoration: none;}
+#trevisibutton a:active {color: white;}
+#trevisibutton a:visited {color: white;}
+
+
+
+@media only screen and (max-width:1024px) {
+    
+    #sfondotrevisi {padding-bottom: 100px;}
+    
+    #trevisilogos {display: block;
+    width: 80%;
+    padding: 50px;}
+
+    #trevisilogos img {display: block;
+        margin-top: 50px;}
+    
+    #trevisibio {width: 80%;
+        padding: 0;
+    margin: 0 auto; }
+    
+    #imgfelpe {display: block;}
+    
+    #trevisishop img {width: 70%;
+
+        display: block;}  
+ 
+    
+}
+
+@media only screen and (max-width:667px) {
+    
+        #trevisishop {width: 100%;}
+    
+}
+
+
+
+/*ABOUT*/
+
+#biography {width: 70%;
+    margin: 0 auto;
+    background-color: black;
+    text-align: center;
+color: white;
+font-size: 20px;
+line-height: 30px;}
+
+#aboutlogo {margin-top: 150px;
+margin-bottom: 100px;}
+
+
+#social {width: 80%;
+margin: 0 auto;
+margin-top: 50px;}
+
+#social a {font-size: 25px;
+    color: #00B3EF;}
+
+@media only screen and (max-width:1024px) {
+    
+    #aboutlogo {display: block;}
+    
+    #aboutlogo img {display: block;}
+    
+
+    
+    #social nav ul {
+    text-align: center;
+    margin: 0 auto;}
+    
+    #social nav ul li {display: block;
+    text-align: center;
+    margin: 0 auto;}
+    
+    #social nav ul li a {padding: 2%;}
+    
+    #biography {text-align: left;}
+    
+}
+
+@media only screen and (max-width:667px) {
+    
+    #social nav ul {display: block;}
+    
+}
+
+/*PRODUCTS*/
+
+
+#classics{position: relative;
+background-color: white;
+padding-bottom: 50px;}
+
+
+
+#shophone1{display: none;}
+#shophone{display: none;}
+
+#shoppv{font-family: monospace;
+    text-decoration: none;
+    width: 93%;
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+margin: 0 auto;}
+
+
+
+ 
+
+.S{width: 30%;
+margin-top: 7vh;
+text-align: center;
+font-size: 20px;}
+
+.S img{width: 100%;
+transition: all 0.6s;
+text-decoration: none;}
+
+.S img:hover{filter: blur();
+transition: all 1s;
+opacity: 0.5;}
+
+
+
+footer{color: white;
+text-align: center;
+text-decoration: none;
+margin: 0 auto;} 
+
+
+#vocifooter {width: 50%;
+padding: 50px;
+margin: 0 auto;}
+
+
+
+#titoloprodotti {margin-top: 90px;
+background-color: white;
+font-size: 20px;}
+
+#titoloprodotti ul {background-color: white;
+}
+
+.menufilter{
+display: none;
+    width: 100%;
+    height: 100%;
+background-color:black;
+    color: white;
+text-align: center;
+z-index: 4000;
+top: 0;
+left: 0;}
+
+.showmenufilter {display: block;}
+
+
+.navbar {width: 20px;
+height: 20px;
+background-color: #00B3EF;
+    filter: invert();
+position: fixed;
+top: 120px;
+right: 100px;
+z-index: 6000;
+border-radius: 50px;
+mix-blend-mode: exclusion;
+cursor: pointer;
+align-content: center;}
+
+.navbar img {width: 95%;
+margin: 0 auto;
+cursor: pointer;}
+
+#goback {width: 40px;
+height: 40px;
+background-color: #00B3EF;
+    filter: invert();
+position: fixed;
+top: 120px;
+left: 100px;
+z-index: 4000;
+border-radius: 50px;
+mix-blend-mode: exclusion;
+cursor: pointer;
+align-content: center;}
+
+#goback img {width: 90%;
+    cursor: pointer;
+}
+
+/*ICONA HYPERMOB PICCOLA*/
+
+#Ggohyp {width: 40px;
+height: 40px;
+background-color: #00B3EF;
+    filter: invert();
+position: fixed;
+top: 120px;
+right: 100px;
+z-index: 4000;
+border-radius: 50px;
+mix-blend-mode: exclusion;
+cursor: pointer;
+align-content: center;}
+
+#Ggohyp img {width: 80%;
+    cursor: pointer;
+    margin-left: 3.75px;
+    margin-top: 3.5px;
+
+
+    
+}
+
+
+
+
+
+
+
+.sottomenu {position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: black;
+z-index: 5000;
+    transition: .3s;
+    transform: translateX(-100%);
+   
+}
+
+.sottomenu nav {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 170px;
+}
+
+.sottomenu nav ul {margin-top: 18%;
+    display: block;
+margin: 0 auto;
+width: auto;}
+
+.sottomenu nav ul li {
+    margin: 0 auto;
+align-content: center;
+text-align: center;
+margin: 0 auto;
+margin-top: 2%;}
+
+.sottomenu nav ul li a {text-align: center;
+margin-top: 30px;
+font-size: 20px;}
+
+.wide {
+    transform: translateX(0);
+}
+
+/*PAGINA PRODOTTO*/
+
+
+#gallery {width: 80%;
+display: flex;
+    margin: 0 auto;
+    filter: invert();
+    margin-top: 2%;}
+
+#gallery img {width: 30%;
+align-items: center;
+display: inline;}
+
+#productinfo {width: 70%;
+    margin: 0 auto;
+    margin-top: 3%;
+color: white;
+font-size: 20px;
+    line-height: 30px;
+text-align: center;
+text-decoration: none;}
+
+#productinfo a {text-decoration: none;}
+
+#productinfo a:visited {color: #00B3EF;}
+
+#productinfo a:active {color: #00B3EF;}
+
+
+
+#productinfo p {width: 70%;
+margin: 0 auto;
+margin-top: 6%;
+margin-bottom: 6%;}
+
+#video3d {width: 35%;
+margin: 0 auto;}
+
+#video3d video {width: 100%;
+margin: 0 auto;}
+
+
+
+.productname {margin-top: 4px;
+font-family: 'Gruppo';
+font-size: 25px;}
+
+@media only screen and (max-width:1024px) {
+    
+    .productname {margin-top: 5px;
+    margin-bottom: 8px;}
+    
+    #productinfo {width: 100%;
+    text-align: left;
+    margin: 0 auto;}
+    
+    #productinfo p {width: 80%;}
+    
+        section#menu ul li {margin-top: 80px;
+    margin-bottom: 80px;}
+    
+    footer {width: 100%;
+            padding: 0;}
+    
+    footer section {width: 80%;
+    margin: 0 auto;}
+    
+    #gallery {display: block;}
+    
+    #gallery img {display: block;
+    width: 100%;
+    margin-top: 50px;}
+    
+    #video3d {width: 80%;
+margin: 0 auto;}
+
+#video3d video {width: 100%;
+margin: 0 auto;}
+    
+    
+ 
+    
+}
+
+@media only screen and (max-width:667px) {
+    
+
+        #shoppv {display: block;
+    width: 80%;}
+    
+    .S {width: 100%;
+margin-top: 0;}
+    
+    #titoloprodotti nav {height: 80px;
+    align-content: center;}
+    
+    .productname {padding-top: 10px;
+    padding-bottom: 20px;}
+    
+    
+    
+}
+
+
+
+
+
+
+
